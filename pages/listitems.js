@@ -1,5 +1,4 @@
 import styles from "../styles/motodo.module.css";
-import { Button } from "@material-ui/core";
 
 export default function ListItems(props) {
 
@@ -10,14 +9,16 @@ export default function ListItems(props) {
     }
 
     return (
-        <div className={styles.todolist}>
-            <ul>
-                {props.list.slice(0).reverse().map((item, index) => {
-                    return <li onClick={() => handleClick(index)} key={index}>
-                        {item}
-                    </li>
-                })}
-            </ul>
-        </div>
+        <>
+            <div className={styles.todolist}>
+                <ul>
+                    {props.list.slice(0).reverse().map((item, index) => {
+                        return <li onClick={() => handleClick(index)} key={index}>
+                            {item}
+                        </li>
+                    })}
+                </ul>
+            </div>
+        </>
     );
 }
