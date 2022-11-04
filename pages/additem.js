@@ -17,7 +17,7 @@ export default function AddItem(props) {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <TextField id="item" label="Add to your list" onChange={handleChange} />
+                <TextField id="item" label="Add to your list" onChange={handleChange} value={props.item} />
                 <Button color="primary" size="large">Add</Button>
             </form>
         </>

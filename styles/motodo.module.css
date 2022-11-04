@@ -9,11 +9,16 @@
 }
 
 .todolist {
-    margin-left: 35%;
+    margin-left: 45%;
     text-align: center;
-    width: 30%;
+    width: 20%;
 }
 
+.todolist li {
+    padding: 0.5rem 0;
+    list-style: none;
+    text-align: left;
+}
 .footer {
     border-top: solid black 1px;
     text-align: center;
