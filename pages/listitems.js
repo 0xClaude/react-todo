@@ -4,9 +4,9 @@ import { Button } from "@material-ui/core";
 export default function ListItems(props) {
 
     function handleClick(index) {
-        props.setList(props.list.filter((item, i) => {
+        props.setList((props.list.reverse().filter((item, i) => {
             return i != index;
-        }));
+        })).reverse());
     }
 
     return (
