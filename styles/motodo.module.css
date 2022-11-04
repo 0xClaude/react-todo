@@ -1,0 +1,20 @@
+.main {
+    height: 90vh;
+    text-align: center;
+
+}
+
+.main button {
+    margin-top: 0.3rem;
+}
+
+.todolist {
+    margin-left: 35%;
+    text-align: center;
+    width: 30%;
+}
+
+.footer {
+    border-top: solid black 1px;
+    text-align: center;
+}
